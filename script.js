@@ -17,7 +17,7 @@ function login(event) {
   if (user) {
     alert("Login successful");
     console.log(1);
-    window.location.replace("../landingpage_1.html");
+    window.location.replace("landingpage_1.html");
   } else {
     alert("Invalid username or password");
   }
