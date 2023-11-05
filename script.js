@@ -1,25 +1,25 @@
 function login() {
-    var username = document.getElementById("loginUsername").value;
-    var password = document.getElementById("loginPassword").value;
-    var storedUsers = JSON.parse(localStorage.getItem("users")) || [];
-  
-    if (username.trim() === "" || password.trim() === "") {
-      alert("Please enter a username and password");
-      return;
-    }
-  
-    var user = storedUsers.find(function (user) {
-      return user.username === username && user.password === password;
-    });
-  
-    if (user) {
-      alert("Login successful");
-      console.log(1);
-      window.location.href = "landingpage_1.html";
-    } else {
-      alert("Invalid username or password");
-    }
+  var username = document.getElementById("loginUsername").value;
+  var password = document.getElementById("loginPassword").value;
+  var storedUsers = JSON.parse(localStorage.getItem("users")) || [];
+
+  if (username.trim() === "" || password.trim() === "") {
+    alert("Please enter a username and password");
+    return;
   }
+
+  var user = storedUsers.find(function (user) {
+    return user.username === username && user.password === password;
+  });
+
+  if (user) {
+    alert("Login successful");
+    console.log(1);
+    window.location.replace("../landingpage_1.html");
+  } else {
+    alert("Invalid username or password");
+  }
+}
   
   
 
