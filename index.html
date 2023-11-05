@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website with Login & Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="nav_logo">CodingLab</a>
+
+      <ul class="nav_items">
+        <li class="nav_item">
+          <a href="#" class="nav_link">Home</a>
+          <a href="#" class="nav_link">Product</a>
+          <a href="#" class="nav_link">Services</a>
+          <a href="#" class="nav_link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section class="home show">
+    <div class="form_container login">
+      <!-- Login From -->
+      <div class="form login_form">
+        <form action="#">
+          <h2>Login</h2>
+
+          <div class="input_box">
+            <input type="text" id="loginUsername" placeholder="Enter Your Username" required />
+          </div>
+          <div class="input_box">
+            <input type="text" id="loginPassword" placeholder="Enter your password" required />
+          </div>
+
+          <div class="option_field">
+            <a href="forget.html" class="forgot_pw">Forgot password?</a>
+          </div>
+
+          <button class="button" onclick="login()">Login Now</button>
+          <div class="login_signup">Don't have an account? <a href="register.html" id="signup">Signup</a></div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
