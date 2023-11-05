@@ -1,4 +1,6 @@
-function login() {
+function login(event) {
+  event.preventDefault();
+
   var username = document.getElementById("loginUsername").value;
   var password = document.getElementById("loginPassword").value;
   var storedUsers = JSON.parse(localStorage.getItem("users")) || [];
@@ -20,6 +22,7 @@ function login() {
     alert("Invalid username or password");
   }
 }
+
   
   
 
