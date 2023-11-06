@@ -27,6 +27,7 @@ function populateUserGrid(users) {
         userCard.innerHTML = `
         <img src="${user.avatar}" class="card-img-top" alt="User Avatar">
         <div class="card-body">
+            <h5 class="card-title">Id:${user.id}</h5>
             <h5 class="card-title">${user.first_name} ${user.last_name}</h5>
             <p class="card-text">${user.email}</p>
         </div>
