@@ -46,14 +46,15 @@
 }
 
 .user img {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: auto;
   border-radius: 50%;
 }
 
 
 .container {
     display: flex;
+    flex-wrap: nowrap;
 }
 
 aside {
@@ -72,9 +73,12 @@ section {
     grid-gap: 20px;
 }
 
+
 nav{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+.card{
+  flex-basis: 100%;
+}
