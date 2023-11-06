@@ -75,6 +75,11 @@ function login(event) {
       return user.username === username || user.email === email;
     });
   
+    if (!isStrongPassword(password)) {
+      alert("Password should be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character");
+      return;
+    }
+
     if (userExists) {
       alert("User already registered");
       return;
@@ -85,6 +90,11 @@ function login(event) {
       return;
     }
   
+    if (!isStrongPassword(password)) {
+      alert("Password should be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character");
+      return;
+    }
+
     var newUser = {
       username: username,
       firstName: firstName,
