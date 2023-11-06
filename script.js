@@ -125,6 +125,10 @@ function resetPassword() {
     alert("Passwords do not match");
     return;
   }
+    if (!isStrongPassword(newPassword)) {
+      alert("Password should be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character");
+      return;
+    }
 
   var storedUsers = JSON.parse(localStorage.getItem("users")) || [];
 
