@@ -82,3 +82,9 @@ nav{
 .card{
   flex-basis: 20%;
 }
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
