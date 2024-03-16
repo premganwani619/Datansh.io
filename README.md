@@ -6,14 +6,13 @@ This project implements a simple user authentication system with signup, login, 
 - User signup: Users can create a new account by providing necessary details.
 - User login: Existing users can log in using their credentials.
 - Logout: Users can log out of their accounts, clearing their session data.
-- Forgot password: Users can request a password reset if they forget their password.
-- Display random user data: After logging in, users are redirected to a page where data of random users is displayed.
+- Reset password: Users can request a password reset if they forget their password.
+- Display random user data: After logging in, users are redirected to a page where data of random users is displayed from an api.
 - Dynamic pagination: Users can choose the number of users displayed per page, enhancing user experience.
 
 ## Technologies Used
 - HTML, CSS, JavaScript for frontend development.
 - Local storage for managing user session data.
-- Backend server (not specified in this README) for handling authentication requests and serving user data.
 
 ## Implementation Details
 
@@ -34,15 +33,15 @@ This project implements a simple user authentication system with signup, login, 
 2. The system clears the user session data from local storage.
 3. Users are redirected to the login page.
 
-### Forgot Password
-1. Users click on the "Forgot Password" link on the login page.
-2. They provide their email address.
-3. If the email address matches an existing user, a password reset link is sent to that email address.
-4. Users can then reset their password using the provided link.
+### Reset Password
+1. Users click on the "Reset Password" link on the login page.
+2. They provide their old and new passwords.
+3 If the password matches, it will be reset.
 
 ### Display Random User Data
 1. After successful login, users are redirected to a page where data of random users is displayed.
-2. Users can select the number of users they want to see per page using the pagination feature.
+2. User data is fetched from a random user API to ensure authenticity and diversity.
+3. Users can select the number of users they want to see per page using the pagination feature.
 
 ## Installation and Setup
 - Clone the repository to your local machine.
